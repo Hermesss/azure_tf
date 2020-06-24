@@ -1,5 +1,5 @@
 #secrets
-subscription.tfvars
+terraform.tfvars
 # Local .terraform directories
 **/.terraform/*
 
