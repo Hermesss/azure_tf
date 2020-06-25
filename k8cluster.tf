@@ -2,11 +2,11 @@ resource "azurerm_resource_group" "k8s_rg" {
   name     = "k8sRG1"
   location = var.azure_region
 }
-resource "azurerm_kubernetes_cluster" "k8_cluster" {
+resource "azurerm_kubernetes_cluster" "k8s" {
   name                = "k8s_cluster"
   location            = azurerm_resource_group.k8s_rg.location
   resource_group_name = azurerm_resource_group.k8s_rg.name
-  dns_prefix          = "k8s"
+  dns_prefix          = "denlap"
 
   default_node_pool {
     name            = "default"
@@ -25,11 +25,11 @@ resource "azurerm_kubernetes_cluster" "k8_cluster" {
   }
 }
 
-output "client_certificate" {
-  value = "${azurerm_kubernetes_cluster.k8_cluster.kube_config.0.client_certificate}"
-}
-
-output "kube_config" {
-  value = "${azurerm_kubernetes_cluster.k8_cluster.kube_config_raw}"
-}
+#output "client_certificate" {
+#  value = "${azurerm_kubernetes_cluster.k8s.kube_config.0.client_certificate}"
+#}
+#
+#output "kube_config" {
+#  value = "${azurerm_kubernetes_cluster.k8s.kube_config_raw}"
+#}
 
