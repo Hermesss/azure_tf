@@ -1,11 +1,15 @@
 # azure_tf
-Terraform script to build a Kubernetes cluster on Azure using Azure Kubernetes Service with parameters listed in variables.tf
-To connect to Your Azure Subscribtion You must add terraform.tfvars file including next info substituted with Your private params:
+Terraform script to build a Kubernetes cluster on Azure using Azure Kubernetes Service with parameters listed in variables.tf <br />
+To connect to Your Azure Subscribtion You must add terraform.tfvars file including next info substituted with Your private params: <br />
 
 subscription_id = "aaaaaa-aaaa-aaaa-aaa-aaaaaa" <br />
 client_id = "bbbbb-bbbb-bbbb-bbbb-bbbbbbb" <br />
 client_secret = "x123123x23xrtrxtrt4525" <br />
 tenant_id = "aaaaa-bbbbb-cccc-dddd" <br />
+
+Change context to cloned directory and run: <br />
+terrafom init <br />
+terraform apply <br />
 
 Output includes info to connect to cluster.
 
