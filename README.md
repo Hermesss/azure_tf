@@ -1,3 +1,5 @@
+<img width="1280" alt="Screen Shot 2020-06-29 at 09 27 31" src="https://user-images.githubusercontent.com/22493407/85980421-0a54bc80-b9eb-11ea-9de7-fb63cfcbd13d.png">
+
 # azure_tf
 Terraform script to build a Kubernetes cluster on Azure using Azure Kubernetes Service with parameters listed in variables.tf <br />
 To connect to Your Azure Subscribtion You must add terraform.tfvars file including next info substituted with Your private params: <br />
